@@ -1,7 +1,6 @@
 import { IResponseArticles } from "@/domain/entities/news.entity";
 import CardUI from "@/infrastructures/ui/Card";
 import { Col, Row } from "antd";
-import Link from "next/link";
 
 interface Props {
     data: IResponseArticles | undefined
@@ -10,7 +9,6 @@ interface Props {
 export default function ListNews({
     data
 }: Props) {
-    
     return (
         <>
             <div>

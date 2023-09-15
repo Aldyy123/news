@@ -1,4 +1,4 @@
-export interface IArticle {
+export type IArticle = {
     source: {
         id: string | null,
         name: string
@@ -12,7 +12,7 @@ export interface IArticle {
     content: string | null
 }
 
-export interface IResponseArticles {
+export type IResponseArticles = {
     status: string
     totalResults: number
     articles: IArticle[]

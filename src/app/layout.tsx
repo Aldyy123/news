@@ -1,8 +1,8 @@
-"use strict"
 "use client"
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import './globals.css'
 import 'react-loading-skeleton/dist/skeleton.css'
+import { RecoilRoot } from 'recoil'
 
 export default function RootLayout({
   children,
@@ -14,9 +14,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <QueryClientProvider client={queryClient}>
-          {children}
-        </QueryClientProvider>
+        <RecoilRoot>
+          <QueryClientProvider client={queryClient}>
+            {children}
+          </QueryClientProvider>
+        </RecoilRoot>
       </body>
     </html>
   )

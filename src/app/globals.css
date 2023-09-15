@@ -96,8 +96,14 @@ body {
 }
 
 a {
-  color: inherit;
+  color: rgb(112, 112, 214);
   text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1260px;
+  padding: 0 10px;
 }
 
 /* @media (prefers-color-scheme: dark) {
